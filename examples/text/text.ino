@@ -15,7 +15,7 @@
 #include <SD.h>
 #include "GT20L16_drive.h"
 
-#define SCREEN_SIZE 200                 // choose screen size: 144, 200, 270
+#define SCREEN_SIZE 270                 // choose screen size: 144, 200, 270
 
 #if (SCREEN_SIZE == 144)
 #define EPD_SIZE    EPD_1_44
@@ -40,9 +40,11 @@ void setup()
     GT20L16.begin();
 
     int timer1 = millis();
-    EPAPER.drawString("SeeedStudio", 10, 10);
-    EPAPER.drawNumber(12345, 60, 40);
-    EPAPER.drawFloat(-1.25, 2, 80, 65);
+    EPAPER.drawString("HELLO WORLD", 10, 10);
+    EPAPER.drawString("HELLO", 10, 20);
+    EPAPER.drawString("HELLO", 10, 30);
+//    EPAPER.drawNumber(12345, 60, 40);
+//    EPAPER.drawFloat(-1.25, 2, 80, 65);
     EPAPER.display();                                   // use only once
 
 }

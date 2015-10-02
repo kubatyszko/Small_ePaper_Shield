@@ -10,7 +10,7 @@
 #include <SD.h>
 
 #include "GT20L16_drive.h"
-#include "picture.h"
+#include "julek.h"
 
 #define SCREEN_SIZE 270             // choose screen size here: 144, 200, 270
 
